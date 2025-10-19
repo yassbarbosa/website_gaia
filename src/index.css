@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: "Space Grotesk", sans-serif;
+
+  color-scheme: light dark;
+  color: white;
+  background-color: black;
+
+  --red: #FE3849;
+  --green: #00E369;
+  --purple: #5E61EF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: black;
+    background-color: white;
+  }
+}
