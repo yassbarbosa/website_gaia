@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1.2vw 0;
+    width: 100vw;
+    height: 4vh;
+    background-color: white;
+}
+
+@media (prefers-color-scheme: light) {
+    .header {
+        background-color: black;
+    }
+}
+
+.logo {
+    margin-left: 2vw;
+}
+
+.links {
+    display: flex;
+    gap: 2vw;
+    margin-left: 4vw;
+}
