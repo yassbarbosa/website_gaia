@@ -25,6 +25,7 @@ export default function Slider({ slides, intervalo = 3000 }: Carrossel) {
 
   return (
     <div className={styles.slider}>
+      <h1>Engaje nos 3 meios...</h1>
       <div
         className={styles.carrossel}
         style={{ transform: `translateX(-${index * 100}%)` }}

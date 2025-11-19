@@ -1,0 +1,36 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15vw;
+    height: 45vh;
+    padding: 1vw 2vw;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+
+    p{
+        margin-top: -20px;
+    }
+}
+
+.card:hover {
+    transform: translateY(-4vh) scale(1.02);
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+.sombraNumero {
+    position: absolute;
+    top: -7.5vw;
+    right: 0.8vw;
+    opacity: 0.2;
+    font-size: 9rem;
+}
+
+.numeroCard {
+    font-size: 4rem;
+    margin-bottom: -2vh;
+}
