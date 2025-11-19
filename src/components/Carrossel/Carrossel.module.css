@@ -1,11 +1,8 @@
 .slider {
-  width: 40%;
+  width: 50vw;
   overflow: hidden;
-  margin: 0 auto;
-  
-  h1{
-  text-align: center;
-  }
+  margin: 2vw 0 0;
+  position: relative;
 }
 
 .carrossel {
@@ -15,75 +12,51 @@
 
 .slideItem {
   width: 100%;
-  display: flex;          
-  flex-direction: row;      
+  display: flex;
+  flex-direction: row;
   align-items: center;
   flex-shrink: 0;
-  gap: 20px;               
+  gap: 1rem;
 }
 
 .imagem {
   width: 50%;
-  height: auto;
-  object-fit: cover;
-  display: block;
 }
 
-.texto{
-    width: 50%;
-    padding: 20px;
+.texto {
+  width: 50%;
+  padding: 1vw;
 }
 
-h5{
-    font-weight: normal;
-}
-
-
-h2{
-   font-weight: bold;
+h5 {
+  font-weight: normal;
 }
 
 .pontosNavegacao {
   display: flex;
-  gap: 8px;
+  gap: 1vw;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 2vw;
 }
 
 .ponto {
-  width: 10px;
-  height: 10px;
-  background: #ccc;
+  width: 0.8vw;
+  height: 0.8vw;
+  background: #555555;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .pontoAtual {
-  background: black;
+  background: white;
 }
 
-.slider {
-  background-color: white;
-  color: black;
-}
-
-@media (prefers-color-scheme: dark) {
-  .slider {
-    background-color: black;
-    color: white;
-  }
-
-  .texto h2,
-  .texto h5 {
-    color: white;
-  }
-
+@media (prefers-color-scheme: light) {
   .ponto {
-    background: #555;
+    background: #CCCCCC;
   }
 
   .pontoAtual {
-    background: white;
+    background: black;
   }
 }
-

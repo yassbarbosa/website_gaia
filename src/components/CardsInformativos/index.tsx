@@ -12,7 +12,8 @@ export default function CardsInformativos({ numero, titulo, texto, cor }: CardsI
     <div
       className={styles.card}
       style={{
-        background: `linear-gradient(40deg, ${cor}, color-mix(in srgb, ${cor} 45%, black))`,
+        ["--card-background" as any]: `linear-gradient(40deg, ${cor}, color-mix(in srgb, ${cor} 45%, black))`,
+        ["--card-background-light" as any]: `linear-gradient(40deg, ${cor}, color-mix(in srgb, ${cor} 70%, black))`,
       }}
     >
       <h1 className={styles.sombraNumero}>{numero}</h1>

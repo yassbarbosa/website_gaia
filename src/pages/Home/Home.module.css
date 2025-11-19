@@ -24,7 +24,8 @@
 
 /* Cards Informativos */
 .cardsInformativosBox,
-.cardsIntegrantesBox {
+.cardsIntegrantesBox,
+.carroselBox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,3 +56,7 @@
   flex-wrap: wrap;
 }
 
+/* App Info */
+.appInfoBox {
+  margin: 4vw 0 2vw;
+}

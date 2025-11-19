@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
 import styles from "./Carrossel.module.css";
 
-type itemCarrossel = {
+interface ItemCarrossel {
   imagem: string;
   titulo: string;
   texto: string;
-};
+}
 
-type Carrossel = {
-  slides: itemCarrossel[];
+interface CarrosselProps {
+  slides: ItemCarrossel[];
   intervalo?: number;
-};
+}
 
-export default function Slider({ slides, intervalo = 3000 }: Carrossel) {
+export default function Carrosel({ slides, intervalo = 3000 }: CarrosselProps) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -25,7 +25,6 @@ export default function Slider({ slides, intervalo = 3000 }: Carrossel) {
 
   return (
     <div className={styles.slider}>
-      <h1>Engaje nos 3 meios...</h1>
       <div
         className={styles.carrossel}
         style={{ transform: `translateX(-${index * 100}%)` }}
@@ -34,7 +33,6 @@ export default function Slider({ slides, intervalo = 3000 }: Carrossel) {
           <div key={i} className={styles.slideItem}>
             <img src={slide.imagem} className={styles.imagem} />
 
-            {}
             <div className={styles.texto}>
               <h2>{slide.titulo}</h2>
               <h5>{slide.texto}</h5>
@@ -43,12 +41,13 @@ export default function Slider({ slides, intervalo = 3000 }: Carrossel) {
         ))}
       </div>
 
-      {}
       <div className={styles.pontosNavegacao}>
         {slides.map((_, i) => (
           <div
             key={i}
-            className={`${styles.ponto} ${index === i ? styles.pontoAtual : ""}`}
+            className={`${styles.ponto} ${
+              index === i ? styles.pontoAtual : ""
+            }`}
             onClick={() => setIndex(i)}
           />
         ))}

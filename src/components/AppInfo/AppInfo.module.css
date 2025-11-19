@@ -1,0 +1,56 @@
+.card {
+  position: relative;
+  width: 60vw;
+  height: 45vh;
+  display: flex;
+  color: white;
+  background: linear-gradient(to bottom, #621ebc, #31066a);
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.imagem {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25vw;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.info {
+  width: calc(100% - 30vw);
+  margin-left: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.8vw;
+  margin-bottom: -4vh;
+  font-size: 1.2rem;
+}
+
+.titulo img {
+  height: 2.5vw;
+  align-self: center;
+}
+
+.appsDownload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 2vw;
+}
+
+.appsDownload img {
+  width: 8vw;
+  height: auto;
+  cursor: pointer;
+}
