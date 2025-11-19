@@ -9,13 +9,13 @@ type Props = {
 export default function Slider({ img, titulo, texto }: Props) {
   return (
     <div className={styles.card}>
-      <div className={styles.media}>
-        <img src={img} alt={titulo} className={styles.image} />
+      <div className={styles.foto}>
+        <img src={img} alt={titulo} className={styles.imagem} />
       </div>
 
       <div className={styles.info}>
-        <h3 className={styles.title}>{titulo}</h3>
-        <p className={styles.description}>{texto}</p>
+        <h3 className={styles.titulo}>{titulo}</h3>
+        <p className={styles.descricao}>{texto}</p>
       </div>
     </div>
   );
