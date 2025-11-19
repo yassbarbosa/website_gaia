@@ -7,8 +7,9 @@ export default function Footer() {
   });
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contato">
       <img src={logo} alt="logo" className={styles.logo} />
+      <hr className={styles.linha} />
 
       <div className={styles.infos}>
         <form className={styles.newsletter}>

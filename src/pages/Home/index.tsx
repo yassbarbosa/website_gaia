@@ -1,8 +1,14 @@
 import styles from "./Home.module.css";
 import { useThemeLogo } from "../../utils/useThemeLogo";
 import CardsInformativos from "../../components/CardsInformativos";
+import Carrosel from "../../components/Carrossel";
 import CardsIntegrantes from "../../components/CardsIntegrantes";
+import AppInfo from "../../components/AppInfo";
+import ambiental from "../../assets/ambiental.png";
+import governamental from "../../assets/governamental.png";
+import social from "../../assets/social.png";
 import fotoMirella from "../../assets/mirella.png";
+import appCelular from "../../assets/imagemTelefone.png";
 
 export default function Home() {
   const logo = useThemeLogo("/logoPreto.svg", "/logoBranco.svg", {
@@ -25,7 +31,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className={styles.cardsInformativosBox}>
+      <div className={styles.cardsInformativosBox} id="impacto">
         <div className={styles.cardsInformativosTitulo}>
           <h1>Como funciona o</h1>
           <img src={logo} alt="logo" />
@@ -54,7 +60,30 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.cardsIntegrantesBox}>
+      <div className={styles.carroselBox}>
+        <h1>Engaje nos 3 meios...</h1>
+        <Carrosel
+          slides={[
+            {
+              imagem: ambiental,
+              titulo: "Ambiental",
+              texto: "Práticas sustentáveis voltadas ao meio ambiente.",
+            },
+            {
+              imagem: governamental,
+              titulo: "Governamental",
+              texto: "Práticas que asseguram gestão responsável, transparente e alinhada a princípios éticos.",
+            },
+            {
+              imagem: social,
+              titulo: "Social",
+              texto: "Práticas voltadas à responsabilidade social.",
+            },
+          ]}
+        />
+      </div>
+
+      <div className={styles.cardsIntegrantesBox} id="sobreNos">
         <div className={styles.integrantesTitulo}>
           <h1>Quem fez o</h1>
           <img src={logo} alt="logo" />
@@ -88,6 +117,10 @@ export default function Home() {
             cargo="dev front-end"
           />
         </div>
+      </div>
+
+      <div className={styles.appInfoBox}>
+        <AppInfo imagem={appCelular} />
       </div>
     </div>
   );

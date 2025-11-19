@@ -10,15 +10,16 @@
     color: white;
     cursor: pointer;
     transition: 0.5s;
+    background: var(--card-background);
 
-    p{
+    p {
         margin-top: -20px;
     }
 }
 
 .card:hover {
     transform: translateY(-4vh) scale(1.02);
-    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.2);
     transition: 0.5s;
 }
 
@@ -33,4 +34,14 @@
 .numeroCard {
     font-size: 4rem;
     margin-bottom: -2vh;
+}
+
+@media (prefers-color-scheme: light) {
+    .card {
+        background: var(--card-background-light, var(--card-background));
+    }
+
+    .card:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
 }

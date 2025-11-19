@@ -9,10 +9,33 @@ export default function Header() {
       <img src={logo} alt="logo" className={styles.logo} />
 
       <div className={styles.links}>
-        <a href="#">impacto</a>
-        <a href="#">sobre nós</a>
-        <a href="#">shop</a>
-        <a href="#">contato</a>
+        <a
+          href="#impacto"
+          className={styles.link}
+          style={
+            { ["--link-color" as any]: "var(--red)" } as React.CSSProperties
+          }
+        >
+          impacto
+        </a>
+        <a
+          href="#sobreNos"
+          className={styles.link}
+          style={
+            { ["--link-color" as any]: "var(--green)" } as React.CSSProperties
+          }
+        >
+          sobre nós
+        </a>
+        <a
+          href="#contato"
+          className={styles.link}
+          style={
+            { ["--link-color" as any]: "var(--purple)" } as React.CSSProperties
+          }
+        >
+          contato
+        </a>
       </div>
     </header>
   );

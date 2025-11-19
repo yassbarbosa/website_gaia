@@ -22,3 +22,7 @@
     gap: 2vw;
     margin-left: 4vw;
 }
+
+.link:hover {
+    color: var(--link-color, inherit);
+}
