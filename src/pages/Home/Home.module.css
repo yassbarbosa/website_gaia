@@ -1,0 +1,19 @@
+.cardsInformativosBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsInformativosTitulo {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.8vw;
+  margin-bottom: 6vh;
+  font-size: 1.2rem;
+}
+
+.cardsInformativos {
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+}

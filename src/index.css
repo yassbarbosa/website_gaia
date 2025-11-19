@@ -8,8 +8,8 @@
   background-color: black;
 
   --red: #FE3849;
-  --green: #00E369;
-  --purple: #5E61EF;
+  --green: #0A95A5;
+  --purple: #6D1ADA;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,6 +29,7 @@ a {
   color: black;
   transition: 0.5s;
 }
+
 a:hover {
   transition: 0.5s;
   transform: translateY(-4px);
@@ -41,6 +42,7 @@ a:hover {
     color: black;
     background-color: white;
   }
+
   a {
     color: white;
   }
