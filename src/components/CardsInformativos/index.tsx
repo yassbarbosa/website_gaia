@@ -1,13 +1,13 @@
-import styles from "./Cards.module.css";
+import styles from "./CardsInformativos.module.css";
 
-interface CardsProps {
+interface CardsInformativosProps {
   numero: string;
   titulo: string;
   texto: string;
   cor: string;
 }
 
-export default function Cards({ numero, titulo, texto, cor }: CardsProps) {
+export default function CardsInformativos({ numero, titulo, texto, cor }: CardsInformativosProps) {
   return (
     <div
       className={styles.card}
