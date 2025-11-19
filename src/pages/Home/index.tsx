@@ -9,6 +9,14 @@ export default function Home() {
 
   return (
     <div className={styles.body}>
+      <div className={styles.textoInicialBox}>
+        <h1>Salvando o mundo,<br/>uma foto de cada vez</h1>
+        <p>
+          Acreditamos que a educação é a chave para construir um futuro mais sustentável e inclusivo.
+          <br/>Através de pequenas ações diárias, vamos criar um futuro sustentável
+        </p>
+      </div>
+
       <div className={styles.cardsInformativosBox}>
         <div className={styles.cardsInformativosTitulo}>
           <h1>Como funciona o</h1>
