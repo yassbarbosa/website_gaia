@@ -1,0 +1,57 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16vw;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.card img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+
+.informacoesIntegrante {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5vw;
+    width: 100%;
+}
+
+.nomeIntegrante {
+    position: absolute;
+    top: -1.5vw;
+    left: 2vw;
+    background-color: #D7D7FB;
+    color: black;
+    text-align: center;
+    padding: 0.4vw 1vw;
+    border-radius: 10px;
+    border: 2px solid black
+
+}
+
+.cargoIntegrante {
+    background-color: white;
+    width: 80%;
+    color: black;
+    padding: 1.5vw 1vw 1vw;
+    border-radius: 10px;
+    border: 2px solid black
+}
+
+@media (prefers-color-scheme: light) {
+  .card img {
+    border-color: black;
+  }
+}

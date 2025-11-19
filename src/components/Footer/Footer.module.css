@@ -1,0 +1,95 @@
+.footer {
+    margin-top: 8vw;
+    border-top: 1px solid #303030;
+    width: 100vw;
+    padding: 2vw 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    font-size: 0.9rem;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    transform: none;
+    text-decoration: none;
+}
+
+.logo {
+    width: 6vw;
+}
+
+.linha {
+    position: relative;
+    margin-left: 0;
+    justify-items: center;
+    width: 100vw;
+    border: none;
+    border-top: 2px solid white;
+}
+
+.infos {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter label {
+    display: block;
+    margin-bottom: 0.5vw;
+}
+
+.inputBox {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.inputBox input {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 220px;
+}
+
+.inputBox button {
+    background: #00c264;
+    border: none;
+    padding: 0.5vw 1vw;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contato p {
+    margin-bottom: 0vw;
+}
+
+.termos {
+    margin-top: 20px;
+}
+
+.termos a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media (prefers-color-scheme: light) {
+  a {
+    color: black;
+  }
+  .linha {
+    border-top: 2px solid black;
+  }
+  .inputBox button {
+    color: white;
+  }
+  .inputBox input {
+    background: #f0f0f0;
+    color: black;
+  }
+}
